@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		FCA4DF9A26515A0300E82E47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DF9926515A0300E82E47 /* main.swift */; };
+		FCA4DFA126515A6300E82E47 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFA026515A6300E82E47 /* Order.swift */; };
+		FCA4DFA326515CBC00E82E47 /* OrderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFA226515CBC00E82E47 /* OrderState.swift */; };
+		FCA4DFA526515CD000E82E47 /* Orderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFA426515CD000E82E47 /* Orderer.swift */; };
+		FCA4DFA726515CE000E82E47 /* DeliveryStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFA626515CE000E82E47 /* DeliveryStatus.swift */; };
+		FCA4DFA926515E0C00E82E47 /* OrderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFA826515E0C00E82E47 /* OrderLine.swift */; };
+		FCA4DFAB26515E1400E82E47 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFAA26515E1400E82E47 /* Product.swift */; };
+		FCA4DFAD26515E1F00E82E47 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFAC26515E1F00E82E47 /* Money.swift */; };
+		FCA4DFB526516E1300E82E47 /* ShippingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFB426516E1300E82E47 /* ShippingInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,14 @@
 /* Begin PBXFileReference section */
 		FCA4DF9626515A0300E82E47 /* DDD_Start */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DDD_Start; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4DF9926515A0300E82E47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FCA4DFA026515A6300E82E47 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FCA4DFA226515CBC00E82E47 /* OrderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderState.swift; sourceTree = "<group>"; };
+		FCA4DFA426515CD000E82E47 /* Orderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orderer.swift; sourceTree = "<group>"; };
+		FCA4DFA626515CE000E82E47 /* DeliveryStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryStatus.swift; sourceTree = "<group>"; };
+		FCA4DFA826515E0C00E82E47 /* OrderLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLine.swift; sourceTree = "<group>"; };
+		FCA4DFAA26515E1400E82E47 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FCA4DFAC26515E1F00E82E47 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		FCA4DFB426516E1300E82E47 /* ShippingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				FCA4DF9926515A0300E82E47 /* main.swift */,
+				FCA4DFA026515A6300E82E47 /* Order.swift */,
+				FCA4DFA226515CBC00E82E47 /* OrderState.swift */,
+				FCA4DFA426515CD000E82E47 /* Orderer.swift */,
+				FCA4DFA626515CE000E82E47 /* DeliveryStatus.swift */,
+				FCA4DFA826515E0C00E82E47 /* OrderLine.swift */,
+				FCA4DFAA26515E1400E82E47 /* Product.swift */,
+				FCA4DFAC26515E1F00E82E47 /* Money.swift */,
+				FCA4DFB426516E1300E82E47 /* ShippingInfo.swift */,
 			);
 			path = DDD_Start;
 			sourceTree = "<group>";
@@ -119,7 +143,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA4DFA126515A6300E82E47 /* Order.swift in Sources */,
+				FCA4DFA326515CBC00E82E47 /* OrderState.swift in Sources */,
+				FCA4DFA926515E0C00E82E47 /* OrderLine.swift in Sources */,
 				FCA4DF9A26515A0300E82E47 /* main.swift in Sources */,
+				FCA4DFA726515CE000E82E47 /* DeliveryStatus.swift in Sources */,
+				FCA4DFA526515CD000E82E47 /* Orderer.swift in Sources */,
+				FCA4DFAD26515E1F00E82E47 /* Money.swift in Sources */,
+				FCA4DFAB26515E1400E82E47 /* Product.swift in Sources */,
+				FCA4DFB526516E1300E82E47 /* ShippingInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
