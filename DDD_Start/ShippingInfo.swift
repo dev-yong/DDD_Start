@@ -9,10 +9,24 @@ import Foundation
 
 struct ShippingInfo {
     
-    let receiverName: String
-    let receiverPhoneNumbe: String
-    let shippingAddress1: String
-    let shippingAddress2: String
-    let shippingZipcode: String
+    let receiver: Receiver
+    let address: Address
+    
+}
+
+/// '받는 사람' 이라는 도메인 개념을 표현한다.
+struct Receiver {
+    
+    let name: String
+    let phoneNumber: String
+    
+}
+
+/// '주소' 라는 도메인 개념을 표현한다.
+struct Address {
+    
+    let address1: String
+    let address2: String
+    let zipcode: String
     
 }
