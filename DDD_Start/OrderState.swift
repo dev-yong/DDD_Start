@@ -14,5 +14,6 @@ enum OrderState {
     case shipped
     case delivering
     case deliveringCompleted
+    case cancelled
     
 }
