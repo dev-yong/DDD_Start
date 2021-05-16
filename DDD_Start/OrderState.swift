@@ -14,20 +14,5 @@ enum OrderState {
     case shipped
     case delivering
     case deliveringCompleted
- 
-    func isShippingChangeable() -> Bool {
-        switch self {
-        case .paymentWaiting:
-            return true
-        case .preparing:
-            return true
-        case .shipped:
-            return false
-        case .delivering:
-            return false
-        case .deliveringCompleted:
-            return false
-        }
-    }
     
 }

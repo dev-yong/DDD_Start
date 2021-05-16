@@ -15,12 +15,17 @@ struct Order {
     mutating func change(
         shippingInfo: ShippingInfo
     ) throws {
-        guard self.state.isShippingChangeable() else {
+        guard self.isShippingChangeable() else {
             throw OrderError.cannotChangeShippingIn(
                 state: self.state
             )
         }
         self.shippingInfo = shippingInfo
+    }
+    
+    // 출고 전에는 배송지를 변경할 수 없다.
+    private func isShippingChangeable() -> Bool {
+        self.state == .paymentWaiting || self.state == .preparing
     }
     
     private mutating func changeShipped() {
