@@ -8,9 +8,18 @@
 import Foundation
 
 struct Order {
-
+    
+    /// 주문할 때 배송지 정보를 반드시 지정해야 한다.
+    init(
+        orderLines: [OrderLine] = [],
+        shippingInfo: ShippingInfo
+    ) {
+        self.orderLines = orderLines
+        self.shippingInfo = shippingInfo
+    }
+    
     private var state: OrderState
-    private var shippingInfo: ShippingInfo?
+    private(set) var shippingInfo: ShippingInfo
     
     /// 배송지 정보 변경하기
     mutating func change(
@@ -47,7 +56,7 @@ struct Order {
     private(set) var orderLines: [OrderLine] = []
     private(set) var totalAmount: Money = 0
     
-    private mutating func set(
+    mutating func set(
         orderLines: [OrderLine]
     ) throws {
         try self.verifyAtLeastOneOrMore(orderLines: orderLines)
