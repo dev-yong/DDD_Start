@@ -9,4 +9,10 @@ import Foundation
 
 struct ShippingInfo {
     
+    let receiverName: String
+    let receiverPhoneNumbe: String
+    let shippingAddress1: String
+    let shippingAddress2: String
+    let shippingZipcode: String
+    
 }
