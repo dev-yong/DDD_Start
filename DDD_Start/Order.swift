@@ -18,24 +18,24 @@ struct Order {
         self.shippingInfo = shippingInfo
     }
     
-    private var state: OrderState
+    /// Enity로서 식벽자를 갖는다.
+    let orderNumber: String = ""
+    private var state: OrderState = .preparing
     private(set) var shippingInfo: ShippingInfo
     
     /// 배송지 정보 변경하기
+    /// 출고 전에는 배송지를 변경할 수 없다.
     mutating func change(
         shippingInfo: ShippingInfo
     ) throws {
-        guard self.isShippingChangeable() else {
-            throw OrderError.cannotChangeShippingIn(
-                state: self.state
-            )
-        }
+        try self.verifyNotYetShipped()
         self.shippingInfo = shippingInfo
     }
     
-    /// 출고 전에는 배송지를 변경할 수 없다.
-    private func isShippingChangeable() -> Bool {
-        self.state == .paymentWaiting || self.state == .preparing
+    private func verifyNotYetShipped() throws {
+        guard !(self.state != .paymentWaiting && self.state != .preparing) else {
+            throw OrderError.alreadyShipped
+        }
     }
     
     /// 출고 상태로 변경하기
@@ -44,8 +44,10 @@ struct Order {
     }
     
     /// 주문 취소하기
-    public func cancel() {
-        
+    /// 출고 전에 주문을 취소할 수 있다.
+    public mutating func cancel() throws {
+        try self.verifyNotYetShipped()
+        self.state = .cancelled
     }
 
     /// 결제 완료로 변경하기
@@ -81,8 +83,24 @@ struct Order {
     
 }
 
+extension Order: Hashable {
+    
+    static func == (
+        lhs: Order,
+        rhs: Order
+    ) -> Bool {
+        return lhs.orderNumber == rhs.orderNumber
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.orderNumber)
+    }
+    
+}
+
 enum OrderError: LocalizedError {
     
     case cannotChangeShippingIn(state: OrderState)
     case noOrderLine
+    case alreadyShipped
 }
