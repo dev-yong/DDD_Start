@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct Money {
-    
-}
+typealias Money = Int
