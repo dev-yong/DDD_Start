@@ -64,8 +64,6 @@ struct Order {
     }
     
     private(set) var orderLines: [OrderLine] = []
-    private(set) var totalAmount: Money = 0
-    
     private mutating func set(
         orderLines: [OrderLine]
     ) throws {
@@ -84,6 +82,7 @@ struct Order {
         }
     }
     
+    private(set) var totalAmount: Money = 0
     /// 총 주문 금액은 각 상품의 구매 가격 합을 모두 더한 금액이다.
     private mutating func calculateTotalAmounts() {
         self.totalAmount = self.orderLines.reduce(0, { $0 + $1.amounts })

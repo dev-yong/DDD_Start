@@ -20,6 +20,7 @@
 		FCA4DFB92651FFB600E82E47 /* RuleDiscounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFB82651FFB600E82E47 /* RuleDiscounter.swift */; };
 		FCA4DFBB2651FFE300E82E47 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFBA2651FFE300E82E47 /* Customer.swift */; };
 		FCA4DFBD2652039C00E82E47 /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFBC2652039C00E82E47 /* CustomerRepository.swift */; };
+		FCA4DFBF26522C6000E82E47 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFBE26522C6000E82E47 /* OrderRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		FCA4DFB82651FFB600E82E47 /* RuleDiscounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleDiscounter.swift; sourceTree = "<group>"; };
 		FCA4DFBA2651FFE300E82E47 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		FCA4DFBC2652039C00E82E47 /* CustomerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRepository.swift; sourceTree = "<group>"; };
+		FCA4DFBE26522C6000E82E47 /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				FCA4DF9926515A0300E82E47 /* main.swift */,
+				FCA4DFBE26522C6000E82E47 /* OrderRepository.swift */,
 				FCA4DFB82651FFB600E82E47 /* RuleDiscounter.swift */,
 				FCA4DFBC2652039C00E82E47 /* CustomerRepository.swift */,
 				FCA4DFB62651FFA000E82E47 /* CalculateDiscountService.swift */,
@@ -165,6 +168,7 @@
 				FCA4DFB72651FFA000E82E47 /* CalculateDiscountService.swift in Sources */,
 				FCA4DFB92651FFB600E82E47 /* RuleDiscounter.swift in Sources */,
 				FCA4DFA526515CD000E82E47 /* Orderer.swift in Sources */,
+				FCA4DFBF26522C6000E82E47 /* OrderRepository.swift in Sources */,
 				FCA4DFAD26515E1F00E82E47 /* Money.swift in Sources */,
 				FCA4DFAB26515E1400E82E47 /* Product.swift in Sources */,
 				FCA4DFB526516E1300E82E47 /* ShippingInfo.swift in Sources */,
