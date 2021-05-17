@@ -171,6 +171,10 @@
 				FCA4DFB82651FFB600E82E47 /* RuleDiscounter.swift */,
 				FCA4DFBC2652039C00E82E47 /* CustomerRepository.swift */,
 				FCA4DFFA26522DC700E82E47 /* Aggregate_Order */,
+				FCA4E008265238BE00E82E47 /* Aggregate_Member */,
+				FCA4E006265238B100E82E47 /* Aggregate_Payment */,
+				FCA4E005265238A600E82E47 /* Aggregate_Category */,
+				FCA4E0042652389B00E82E47 /* Aggregate_Product */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -217,7 +221,6 @@
 				FCA4DFA426515CD000E82E47 /* Orderer.swift */,
 				FCA4DFA626515CE000E82E47 /* DeliveryStatus.swift */,
 				FCA4DFA826515E0C00E82E47 /* OrderLine.swift */,
-				FCA4DFAA26515E1400E82E47 /* Product.swift */,
 				FCA4DFAC26515E1F00E82E47 /* Money.swift */,
 				FCA4DFB426516E1300E82E47 /* ShippingInfo.swift */,
 				FCA4DFBA2651FFE300E82E47 /* Customer.swift */,
@@ -238,6 +241,35 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCA4E0042652389B00E82E47 /* Aggregate_Product */ = {
+			isa = PBXGroup;
+			children = (
+				FCA4DFAA26515E1400E82E47 /* Product.swift */,
+			);
+			path = Aggregate_Product;
+			sourceTree = "<group>";
+		};
+		FCA4E005265238A600E82E47 /* Aggregate_Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Aggregate_Category;
+			sourceTree = "<group>";
+		};
+		FCA4E006265238B100E82E47 /* Aggregate_Payment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Aggregate_Payment;
+			sourceTree = "<group>";
+		};
+		FCA4E008265238BE00E82E47 /* Aggregate_Member */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Aggregate_Member;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
