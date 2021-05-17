@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias OrderNumber = String
+
 struct Order {
     
     /// 주문할 때 배송지 정보를 반드시 지정해야 한다.
@@ -19,7 +21,7 @@ struct Order {
     }
     
     /// Enity로서 식벽자를 갖는다.
-    let orderNumber: String = ""
+    let id: OrderNumber = ""
     private var state: OrderState = .preparing
     private(set) var shippingInfo: ShippingInfo
     
@@ -89,11 +91,11 @@ extension Order: Hashable {
         lhs: Order,
         rhs: Order
     ) -> Bool {
-        return lhs.orderNumber == rhs.orderNumber
+        return lhs.id == rhs.id
     }
     
     func hash(into hasher: inout Hasher) {
-        hasher.combine(self.orderNumber)
+        hasher.combine(self.id)
     }
     
 }
