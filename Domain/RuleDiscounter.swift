@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RuleDiscounter {
+public protocol RuleDiscounter {
     
     func applyRules(
         customer: Customer,

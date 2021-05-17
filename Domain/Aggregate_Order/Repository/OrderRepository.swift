@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol OrderRepository {
+public protocol OrderRepository {
     
     func order(id: OrderNumber) -> Order
     func save(order: Order)

@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct OrderLine {
+public struct OrderLine {
     
-    let product: Product
-    let price: Money
-    let quantity: Int
+    public let product: Product
+    public let price: Money
+    public let quantity: Int
     /// 각 상품의 구매 가격 합은 상품 가격에 구매 개수를 곱한 값이다.
-    var amounts: Money {
+    public var amounts: Money {
         self.calculateAmoutns()
     }
     
-    init(
+    public init(
         product: Product,
         price: Money,
         quantity: Int

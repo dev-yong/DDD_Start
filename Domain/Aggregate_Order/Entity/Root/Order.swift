@@ -7,12 +7,12 @@
 
 import Foundation
 
-typealias OrderNumber = String
+public typealias OrderNumber = String
 
-struct Order {
+public struct Order {
     
     /// 주문할 때 배송지 정보를 반드시 지정해야 한다.
-    init(
+    public init(
         orderer: Orderer,
         orderLines: [OrderLine] = [],
         shippingInfo: ShippingInfo,
@@ -26,14 +26,14 @@ struct Order {
     }
     
     /// Enity로서 식벽자를 갖는다.
-    let id: OrderNumber = ""
-    let orderer: Orderer
-    private var state: OrderState
-    private(set) var shippingInfo: ShippingInfo
+    public let id: OrderNumber = UUID().uuidString
+    public let orderer: Orderer
+    public private(set) var state: OrderState
+    public private(set) var shippingInfo: ShippingInfo
     
     /// 배송지 정보 변경하기
     /// 출고 전에는 배송지를 변경할 수 없다.
-    mutating func change(
+    public mutating func change(
         shippingInfo: ShippingInfo
     ) throws {
         try self.verifyNotYetShipped()
@@ -63,7 +63,7 @@ struct Order {
         
     }
     
-    private(set) var orderLines: [OrderLine] = []
+    public private(set) var orderLines: [OrderLine] = []
     private mutating func set(
         orderLines: [OrderLine]
     ) throws {
@@ -82,7 +82,7 @@ struct Order {
         }
     }
     
-    private(set) var totalAmount: Money = 0
+    public private(set) var totalAmount: Money = 0
     /// 총 주문 금액은 각 상품의 구매 가격 합을 모두 더한 금액이다.
     private mutating func calculateTotalAmounts() {
         self.totalAmount = self.orderLines.reduce(0, { $0 + $1.amounts })
@@ -92,20 +92,20 @@ struct Order {
 
 extension Order: Hashable {
     
-    static func == (
+    public static func == (
         lhs: Order,
         rhs: Order
     ) -> Bool {
         return lhs.id == rhs.id
     }
     
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(self.id)
     }
     
 }
 
-enum OrderError: LocalizedError {
+public enum OrderError: LocalizedError {
     
     case cannotChangeShippingIn(state: OrderState)
     case noOrderLine

@@ -27,6 +27,16 @@
 		FCA4E00A26527F3700E82E47 /* CalculateDiscountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFB62651FFA000E82E47 /* CalculateDiscountService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FCA4E00126522F2B00E82E47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCA4DF8E26515A0300E82E47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCA4DFD526522D9000E82E47;
+			remoteInfo = Domain;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		FCA4DF9426515A0300E82E47 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -36,6 +46,17 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FCA4E00326522F2B00E82E47 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FCA4E00026522F2B00E82E47 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -79,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA4DFFF26522F2B00E82E47 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +129,7 @@
 				FCA4DFD726522D9000E82E47 /* Domain */,
 				FCA4DFE426522DA100E82E47 /* Infrastructure */,
 				FCA4DF9726515A0300E82E47 /* Products */,
+				FCA4DFFE26522F2B00E82E47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +233,13 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		FCA4DFFE26522F2B00E82E47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -265,10 +295,12 @@
 				FCA4DFC526522D8A00E82E47 /* Sources */,
 				FCA4DFC626522D8A00E82E47 /* Frameworks */,
 				FCA4DFC726522D8A00E82E47 /* Resources */,
+				FCA4E00326522F2B00E82E47 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FCA4E00226522F2B00E82E47 /* PBXTargetDependency */,
 			);
 			name = Application;
 			productName = Application;
@@ -424,6 +456,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCA4E00226522F2B00E82E47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCA4DFD526522D9000E82E47 /* Domain */;
+			targetProxy = FCA4E00126522F2B00E82E47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FCA4DF9B26515A0300E82E47 /* Debug */ = {

@@ -7,10 +7,16 @@
 
 import Foundation
 
-struct Product {
+public struct Product {
     
-    let name: String
-    let price: Money
-    let detail: String
+    public let name: String
+    public let price: Money
+    public let detail: String
+    
+    public init(name: String, price: Money, detail: String) {
+        self.name = name
+        self.price = price
+        self.detail = detail
+    }
     
 }

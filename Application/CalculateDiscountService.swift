@@ -8,12 +8,12 @@
 import Foundation
 import Domain
 
-class CalculateDiscountService {
+public class CalculateDiscountService {
     
     private let ruleDiscounter: RuleDiscounter
     private let customerRepository: CustomerRepository
     
-    init(
+    public init(
         ruleDiscounter: RuleDiscounter,
         customerRepository: CustomerRepository
     ) {
@@ -21,7 +21,7 @@ class CalculateDiscountService {
         self.customerRepository = customerRepository
     }
     
-    func calculateDiscount(
+    public func calculateDiscount(
         orderLines: [OrderLine],
         customerID: String
     ) -> Money {

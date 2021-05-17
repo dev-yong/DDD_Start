@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum DeliveryStatus {
+public enum DeliveryStatus {
     
 }

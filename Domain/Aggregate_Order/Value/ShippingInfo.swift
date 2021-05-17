@@ -7,26 +7,42 @@
 
 import Foundation
 
-struct ShippingInfo: Equatable {
+public struct ShippingInfo: Equatable {
     
-    let receiver: Receiver
-    let address: Address
+    public let receiver: Receiver
+    public let address: Address
+    
+    public init(receiver: Receiver, address: Address) {
+        self.receiver = receiver
+        self.address = address
+    }
     
 }
 
 /// '받는 사람' 이라는 도메인 개념을 표현한다.
-struct Receiver: Equatable {
+public struct Receiver: Equatable {
     
-    let name: String
-    let phoneNumber: String
+    public let name: String
+    public let phoneNumber: String
     
+    public init(name: String, phoneNumber: String) {
+        self.name = name
+        self.phoneNumber = phoneNumber
+    }
+
 }
 
 /// '주소' 라는 도메인 개념을 표현한다.
-struct Address: Equatable {
+public struct Address: Equatable {
     
-    let address1: String
-    let address2: String
-    let zipcode: String
+    public let address1: String
+    public let address2: String
+    public let zipcode: String
     
+    public init(address1: String, address2: String, zipcode: String) {
+        self.address1 = address1
+        self.address2 = address2
+        self.zipcode = zipcode
+    }
+
 }

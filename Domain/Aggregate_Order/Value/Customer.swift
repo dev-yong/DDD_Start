@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Customer {
+public struct Customer {
     
 }

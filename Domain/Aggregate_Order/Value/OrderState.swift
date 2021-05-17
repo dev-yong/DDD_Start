@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum OrderState {
+public enum OrderState {
     
     case paymentWaiting
     case preparing

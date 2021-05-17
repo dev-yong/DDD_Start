@@ -6,18 +6,19 @@
 //
 
 import Foundation
+import Domain
 
-class CancelOrderService {
+public class CancelOrderService {
     
     private let orderRepository: OrderRepository
     
-    init(
+    public init(
         orderRepository: OrderRepository
     ) {
         self.orderRepository = orderRepository
     }
     
-    func cancel(
+    public func cancel(
         id: OrderNumber
     ) throws {
         var order = self.orderRepository.order(id: id)

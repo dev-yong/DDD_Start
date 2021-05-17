@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CustomerRepository {
+public protocol CustomerRepository {
     
     func customer(id: String) -> Customer
 }
