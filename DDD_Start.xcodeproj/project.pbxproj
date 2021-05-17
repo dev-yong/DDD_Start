@@ -19,6 +19,7 @@
 		FCA4DFB72651FFA000E82E47 /* CalculateDiscountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFB62651FFA000E82E47 /* CalculateDiscountService.swift */; };
 		FCA4DFB92651FFB600E82E47 /* RuleDiscounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFB82651FFB600E82E47 /* RuleDiscounter.swift */; };
 		FCA4DFBB2651FFE300E82E47 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFBA2651FFE300E82E47 /* Customer.swift */; };
+		FCA4DFBD2652039C00E82E47 /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DFBC2652039C00E82E47 /* CustomerRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		FCA4DFB62651FFA000E82E47 /* CalculateDiscountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDiscountService.swift; sourceTree = "<group>"; };
 		FCA4DFB82651FFB600E82E47 /* RuleDiscounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleDiscounter.swift; sourceTree = "<group>"; };
 		FCA4DFBA2651FFE300E82E47 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		FCA4DFBC2652039C00E82E47 /* CustomerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				FCA4DF9926515A0300E82E47 /* main.swift */,
 				FCA4DFB82651FFB600E82E47 /* RuleDiscounter.swift */,
+				FCA4DFBC2652039C00E82E47 /* CustomerRepository.swift */,
 				FCA4DFB62651FFA000E82E47 /* CalculateDiscountService.swift */,
 				FCA4DFA026515A6300E82E47 /* Order.swift */,
 				FCA4DFA226515CBC00E82E47 /* OrderState.swift */,
@@ -157,6 +160,7 @@
 				FCA4DFA926515E0C00E82E47 /* OrderLine.swift in Sources */,
 				FCA4DFBB2651FFE300E82E47 /* Customer.swift in Sources */,
 				FCA4DF9A26515A0300E82E47 /* main.swift in Sources */,
+				FCA4DFBD2652039C00E82E47 /* CustomerRepository.swift in Sources */,
 				FCA4DFA726515CE000E82E47 /* DeliveryStatus.swift in Sources */,
 				FCA4DFB72651FFA000E82E47 /* CalculateDiscountService.swift in Sources */,
 				FCA4DFB92651FFB600E82E47 /* RuleDiscounter.swift in Sources */,

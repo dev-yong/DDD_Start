@@ -10,22 +10,22 @@ import Foundation
 class CalculateDiscountService {
     
     private let ruleDiscounter: RuleDiscounter
+    private let customerRepository: CustomerRepository
     
     init(
-        ruleDiscounter: RuleDiscounter
+        ruleDiscounter: RuleDiscounter,
+        customerRepository: CustomerRepository
     ) {
         self.ruleDiscounter = ruleDiscounter
+        self.customerRepository = customerRepository
     }
     
     func calculateDiscount(
         orderLines: [OrderLine],
         customerID: String
     ) -> Money {
-        let customer = self.findCustomer(id: customerID)
+        let customer = self.customerRepository.customer(id: customerID)
         return self.ruleDiscounter.applyRules(customer: customer, orderLines: orderLines)
     }
     
-    private func findCustomer(id: String) -> Customer {
-        Customer()
-    }
 }
