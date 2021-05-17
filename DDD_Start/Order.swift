@@ -13,16 +13,22 @@ struct Order {
     
     /// 주문할 때 배송지 정보를 반드시 지정해야 한다.
     init(
+        orderer: Orderer,
         orderLines: [OrderLine] = [],
-        shippingInfo: ShippingInfo
-    ) {
-        self.orderLines = orderLines
+        shippingInfo: ShippingInfo,
+        state: OrderState
+    ) throws {
+        self.orderer = orderer
         self.shippingInfo = shippingInfo
+        self.state = state
+        
+        try self.verifyAtLeastOneOrMore(orderLines: orderLines)
     }
     
     /// Enity로서 식벽자를 갖는다.
     let id: OrderNumber = ""
-    private var state: OrderState = .preparing
+    let orderer: Orderer
+    private var state: OrderState
     private(set) var shippingInfo: ShippingInfo
     
     /// 배송지 정보 변경하기
@@ -60,7 +66,7 @@ struct Order {
     private(set) var orderLines: [OrderLine] = []
     private(set) var totalAmount: Money = 0
     
-    mutating func set(
+    private mutating func set(
         orderLines: [OrderLine]
     ) throws {
         try self.verifyAtLeastOneOrMore(orderLines: orderLines)
