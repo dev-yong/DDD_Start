@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ShippingInfo {
+struct ShippingInfo: Equatable {
     
     let receiver: Receiver
     let address: Address
@@ -15,7 +15,7 @@ struct ShippingInfo {
 }
 
 /// '받는 사람' 이라는 도메인 개념을 표현한다.
-struct Receiver {
+struct Receiver: Equatable {
     
     let name: String
     let phoneNumber: String
@@ -23,7 +23,7 @@ struct Receiver {
 }
 
 /// '주소' 라는 도메인 개념을 표현한다.
-struct Address {
+struct Address: Equatable {
     
     let address1: String
     let address2: String
