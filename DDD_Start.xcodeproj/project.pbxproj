@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCA0D67726628901006A04F4 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D67626628901006A04F4 /* Member.swift */; };
 		FCA4DF9A26515A0300E82E47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DF9926515A0300E82E47 /* main.swift */; };
 		FCA4DFCD26522D8A00E82E47 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA4DFCB26522D8A00E82E47 /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCA4DFDA26522D9000E82E47 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA4DFD826522D9000E82E47 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,7 +54,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FCA4E00026522F2B00E82E47 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FCA0D67626628901006A04F4 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		FCA4DF9626515A0300E82E47 /* DDD_Start */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DDD_Start; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4DF9926515A0300E82E47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FCA4DFA026515A6300E82E47 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA4DFFF26522F2B00E82E47 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCA0D675266288CF006A04F4 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FCA0D67626628901006A04F4 /* Member.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		FCA4DF8D26515A0300E82E47 = {
 			isa = PBXGroup;
 			children = (
@@ -199,19 +207,11 @@
 		FCA4DFFA26522DC700E82E47 /* Aggregate_Order */ = {
 			isa = PBXGroup;
 			children = (
-				FCA4DFFB26522E2400E82E47 /* Entity */,
+				FCA4DFFD26522E2F00E82E47 /* Root */,
 				FCA4DFFC26522E2600E82E47 /* Value */,
 				FCA4DFF926522DB000E82E47 /* Repository */,
 			);
 			path = Aggregate_Order;
-			sourceTree = "<group>";
-		};
-		FCA4DFFB26522E2400E82E47 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				FCA4DFFD26522E2F00E82E47 /* Root */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		FCA4DFFC26522E2600E82E47 /* Value */ = {
@@ -268,6 +268,7 @@
 		FCA4E008265238BE00E82E47 /* Aggregate_Member */ = {
 			isa = PBXGroup;
 			children = (
+				FCA0D675266288CF006A04F4 /* Root */,
 			);
 			path = Aggregate_Member;
 			sourceTree = "<group>";
@@ -474,6 +475,7 @@
 				FCA4DFED26522DAD00E82E47 /* RuleDiscounter.swift in Sources */,
 				FCA4DFF426522DAD00E82E47 /* OrderRepository.swift in Sources */,
 				FCA4DFF626522DAD00E82E47 /* Orderer.swift in Sources */,
+				FCA0D67726628901006A04F4 /* Member.swift in Sources */,
 				FCA4DFF126522DAD00E82E47 /* Product.swift in Sources */,
 				FCA4DFF726522DAD00E82E47 /* DeliveryStatus.swift in Sources */,
 				FCA4DFF826522DAD00E82E47 /* OrderState.swift in Sources */,

@@ -9,6 +9,7 @@ import Foundation
 
 public typealias OrderNumber = String
 
+/// 고유 식별자를 갖는 객체로 자신의 라이프사이클을 갖기 때문에,  Entity이다.
 public struct Order {
     
     /// 주문할 때 배송지 정보를 반드시 지정해야 한다.
