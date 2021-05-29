@@ -9,14 +9,14 @@ import Foundation
 
 public struct Orderer {
     
-    private let member: Member
+    private let memberID: Member.ID
     public let name: String
     public init(
         name: String,
-        member: Member
+        memberID: Member.ID
     ) {
         self.name = name
-        self.member = member
+        self.memberID = memberID
     }
     
 }

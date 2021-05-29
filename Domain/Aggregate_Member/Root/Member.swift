@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Member {
+public struct Member: Identifiable {
     
-    
+    public let id: String = UUID().uuidString
 }
