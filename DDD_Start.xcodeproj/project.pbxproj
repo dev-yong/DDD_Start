@@ -16,6 +16,13 @@
 		FCA0D689266B5A2D006A04F4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D688266B5A2D006A04F4 /* Account.swift */; };
 		FCA0D68D266B5A57006A04F4 /* StoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D68C266B5A57006A04F4 /* StoreRepository.swift */; };
 		FCA0D68F266B5DDF006A04F4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D68E266B5DDF006A04F4 /* Store.swift */; };
+		FCA0D6B3266B97C8006A04F4 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D6B1266B9777006A04F4 /* Specification.swift */; };
+		FCA0D6B7266B98F7006A04F4 /* AndSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D6B6266B98F7006A04F4 /* AndSpec.swift */; };
+		FCA0D6BD266B9C49006A04F4 /* OrSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D6BC266B9C49006A04F4 /* OrSpec.swift */; };
+		FCA0D6D3266BACBE006A04F4 /* OrdererSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D6B4266B97D1006A04F4 /* OrdererSpec.swift */; };
+		FCA0D6D4266BACBE006A04F4 /* OrderDateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D6B8266B998B006A04F4 /* OrderDateSpec.swift */; };
+		FCA0D6D5266BACC8006A04F4 /* Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4DFE326522DA100E82E47 /* Infrastructure.framework */; };
+		FCA0D6D6266BACC8006A04F4 /* Infrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4DFE326522DA100E82E47 /* Infrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCA4DF9A26515A0300E82E47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DF9926515A0300E82E47 /* main.swift */; };
 		FCA4DFCD26522D8A00E82E47 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA4DFCB26522D8A00E82E47 /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCA4DFDA26522D9000E82E47 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA4DFD826522D9000E82E47 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FCA0D6D7266BACC8006A04F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCA4DF8E26515A0300E82E47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCA4DFE226522DA100E82E47;
+			remoteInfo = Infrastructure;
+		};
 		FCA4E00126522F2B00E82E47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FCA4DF8E26515A0300E82E47 /* Project object */;
@@ -47,6 +61,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		FCA0D6D9266BACC9006A04F4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FCA0D6D6266BACC8006A04F4 /* Infrastructure.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCA4DF9426515A0300E82E47 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +103,11 @@
 		FCA0D688266B5A2D006A04F4 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FCA0D68C266B5A57006A04F4 /* StoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRepository.swift; sourceTree = "<group>"; };
 		FCA0D68E266B5DDF006A04F4 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		FCA0D6B1266B9777006A04F4 /* Specification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		FCA0D6B4266B97D1006A04F4 /* OrdererSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdererSpec.swift; sourceTree = "<group>"; };
+		FCA0D6B6266B98F7006A04F4 /* AndSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndSpec.swift; sourceTree = "<group>"; };
+		FCA0D6B8266B998B006A04F4 /* OrderDateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDateSpec.swift; sourceTree = "<group>"; };
+		FCA0D6BC266B9C49006A04F4 /* OrSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrSpec.swift; sourceTree = "<group>"; };
 		FCA4DF9626515A0300E82E47 /* DDD_Start */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DDD_Start; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4DF9926515A0300E82E47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FCA4DFA026515A6300E82E47 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -124,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA0D6D5266BACC8006A04F4 /* Infrastructure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +234,16 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		FCA0D6BE266B9C97006A04F4 /* Specification */ = {
+			isa = PBXGroup;
+			children = (
+				FCA0D6B1266B9777006A04F4 /* Specification.swift */,
+				FCA0D6B6266B98F7006A04F4 /* AndSpec.swift */,
+				FCA0D6BC266B9C49006A04F4 /* OrSpec.swift */,
+			);
+			path = Specification;
+			sourceTree = "<group>";
+		};
 		FCA4DF8D26515A0300E82E47 = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +310,7 @@
 			children = (
 				FCA4DFE526522DA100E82E47 /* Infrastructure.h */,
 				FCA4DFE626522DA100E82E47 /* Info.plist */,
+				FCA0D6BE266B9C97006A04F4 /* Specification */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -277,6 +319,8 @@
 			isa = PBXGroup;
 			children = (
 				FCA4DFBE26522C6000E82E47 /* OrderRepository.swift */,
+				FCA0D6B4266B97D1006A04F4 /* OrdererSpec.swift */,
+				FCA0D6B8266B998B006A04F4 /* OrderDateSpec.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -428,10 +472,12 @@
 				FCA4DFD226522D9000E82E47 /* Sources */,
 				FCA4DFD326522D9000E82E47 /* Frameworks */,
 				FCA4DFD426522D9000E82E47 /* Resources */,
+				FCA0D6D9266BACC9006A04F4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FCA0D6D8266BACC8006A04F4 /* PBXTargetDependency */,
 			);
 			name = Domain;
 			productName = Domain;
@@ -549,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA4DFEE26522DAD00E82E47 /* Customer.swift in Sources */,
+				FCA0D6D4266BACBE006A04F4 /* OrderDateSpec.swift in Sources */,
 				FCA4DFF526522DAD00E82E47 /* CustomerRepository.swift in Sources */,
 				FCA4DFF226522DAD00E82E47 /* OrderLine.swift in Sources */,
 				FCA0D683266B5296006A04F4 /* ProductRepository.swift in Sources */,
@@ -566,6 +613,7 @@
 				FCA0D67726628901006A04F4 /* Member.swift in Sources */,
 				FCA4DFF126522DAD00E82E47 /* Product.swift in Sources */,
 				FCA4DFF726522DAD00E82E47 /* DeliveryStatus.swift in Sources */,
+				FCA0D6D3266BACBE006A04F4 /* OrdererSpec.swift in Sources */,
 				FCA4DFF826522DAD00E82E47 /* OrderState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,12 +622,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA0D6B7266B98F7006A04F4 /* AndSpec.swift in Sources */,
+				FCA0D6BD266B9C49006A04F4 /* OrSpec.swift in Sources */,
+				FCA0D6B3266B97C8006A04F4 /* Specification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FCA0D6D8266BACC8006A04F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCA4DFE226522DA100E82E47 /* Infrastructure */;
+			targetProxy = FCA0D6D7266BACC8006A04F4 /* PBXContainerItemProxy */;
+		};
 		FCA4E00226522F2B00E82E47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FCA4DFD526522D9000E82E47 /* Domain */;

@@ -29,6 +29,7 @@ public struct Order: Identifiable {
     /// Enity로서 식벽자를 갖는다.
     public let id: OrderNumber = UUID().uuidString
     public let orderer: Orderer
+    public let createdDate: Date = Date()
     public private(set) var state: OrderState
     public private(set) var shippingInfo: ShippingInfo
     
