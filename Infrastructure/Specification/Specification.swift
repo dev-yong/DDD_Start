@@ -11,8 +11,25 @@ open class Specification<T> {
     
     public init() {}
     
-    open func isSatisfied(byArgument argument: T) -> Bool {
-        fatalError()
+    fileprivate var predicateHandler: ((T) -> Bool)?
+    fileprivate init(
+        predicateHandler: @escaping (T) -> Bool
+    ) {
+        self.predicateHandler = predicateHandler
+    }
+    
+    public func predicate(argument: T) -> Bool {
+        predicateHandler?(argument) ?? false
+    }
+
+}
+
+public class SpecificationBuilder {
+    
+    public static func build<T>(
+        where predicate: @escaping (T) -> Bool
+    ) -> Specification<T> {
+        return Specification<T>(predicateHandler: predicate)
     }
     
 }

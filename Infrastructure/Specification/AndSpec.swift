@@ -15,12 +15,11 @@ public class AndSpec<T>: Specification<T> {
         specs: [Specification<T>]
     ) {
         self.specs = specs
+        super.init()
     }
     
-    public override func isSatisfied(byArgument argument: T) -> Bool {
-        return self.specs
-            .map { $0.isSatisfied(byArgument: argument) }
-            .contains(where: { !$0 }) ? false : true
+    public override func predicate(argument: T) -> Bool {
+        self.specs.allSatisfy { $0.predicate(argument: argument) }
     }
     
 }

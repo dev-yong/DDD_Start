@@ -17,9 +17,9 @@ public class OrSpec<T>: Specification<T> {
         self.specs = specs
     }
     
-    public override func isSatisfied(byArgument argument: T) -> Bool {
+    public override func predicate(argument: T) -> Bool {
         return self.specs
-            .map { $0.isSatisfied(byArgument: argument) }
+            .map { $0.predicate(argument: argument) }
             .contains(where: { $0 })
     }
     
