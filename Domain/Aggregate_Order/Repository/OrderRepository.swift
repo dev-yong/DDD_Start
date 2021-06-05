@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import Infrastructure
 
 public protocol OrderRepository {
     
     func order(id: OrderNumber) -> Order
     func save(order: Order)
     func delete(order: Order)
+    func find(spec: Specification<Order>) -> [Order]
     
 }
