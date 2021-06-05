@@ -22,6 +22,8 @@
 		FCA0D6D5266BACC8006A04F4 /* Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4DFE326522DA100E82E47 /* Infrastructure.framework */; };
 		FCA0D6D6266BACC8006A04F4 /* Infrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4DFE326522DA100E82E47 /* Infrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCA0D6DA266BADCC006A04F4 /* OrderSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D6C9266BA3A5006A04F4 /* OrderSpecs.swift */; };
+		FCA0D6CA266BA3A5006A04F4 /* OrderSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D6C9266BA3A5006A04F4 /* OrderSpecs.swift */; };
+		FCA0D6CC266BAA67006A04F4 /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D6CB266BAA67006A04F4 /* Specs.swift */; };
 		FCA4DF9A26515A0300E82E47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DF9926515A0300E82E47 /* main.swift */; };
 		FCA4DFCD26522D8A00E82E47 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA4DFCB26522D8A00E82E47 /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCA4DFDA26522D9000E82E47 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA4DFD826522D9000E82E47 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,6 +108,7 @@
 		FCA0D6B6266B98F7006A04F4 /* AndSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndSpec.swift; sourceTree = "<group>"; };
 		FCA0D6BC266B9C49006A04F4 /* OrSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrSpec.swift; sourceTree = "<group>"; };
 		FCA0D6C9266BA3A5006A04F4 /* OrderSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSpecs.swift; sourceTree = "<group>"; };
+		FCA0D6CB266BAA67006A04F4 /* Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
 		FCA4DF9626515A0300E82E47 /* DDD_Start */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DDD_Start; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4DF9926515A0300E82E47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FCA4DFA026515A6300E82E47 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -235,6 +238,7 @@
 		FCA0D6BE266B9C97006A04F4 /* Specification */ = {
 			isa = PBXGroup;
 			children = (
+				FCA0D6CB266BAA67006A04F4 /* Specs.swift */,
 				FCA0D6B1266B9777006A04F4 /* Specification.swift */,
 				FCA0D6B6266B98F7006A04F4 /* AndSpec.swift */,
 				FCA0D6BC266B9C49006A04F4 /* OrSpec.swift */,
@@ -621,6 +625,7 @@
 				FCA0D6B7266B98F7006A04F4 /* AndSpec.swift in Sources */,
 				FCA0D6BD266B9C49006A04F4 /* OrSpec.swift in Sources */,
 				FCA0D6B3266B97C8006A04F4 /* Specification.swift in Sources */,
+				FCA0D6CC266BAA67006A04F4 /* Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
