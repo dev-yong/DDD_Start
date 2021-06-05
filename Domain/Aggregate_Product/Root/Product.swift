@@ -13,18 +13,18 @@ public struct Product: Hashable, Identifiable {
     public let name: String
     public let price: Money
     public let detail: String
-    public let categoryID: Category.ID
+    public let categoryIDs: Set<Category.ID>
     
     public init(
         name: String,
         price: Money,
         detail: String,
-        categoryID: Category.ID
+        categoryIDs: Set<Category.ID>
     ) {
         self.name = name
         self.price = price
         self.detail = detail
-        self.categoryID = categoryID
+        self.categoryIDs = categoryIDs
     }
     
 }
