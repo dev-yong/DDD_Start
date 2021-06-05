@@ -7,16 +7,8 @@
 
 import Foundation
 
-public struct Category {
+public struct Category: Identifiable {
     
-    private var _products: Set<Product> = []
-    
-    func products(page: Int, size: Int) -> [Product] {
-        let beginIndex = (page - 1) * size
-        let endIndex = page * size
-        let sortedProducts = self._products
-            .sorted { $0.name < $1.name }
-        return Array(sortedProducts[beginIndex..<endIndex])
-    }
-    
+    public let id: String = UUID().uuidString
+
 }
