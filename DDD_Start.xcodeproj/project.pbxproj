@@ -12,6 +12,10 @@
 		FCA0D67C266B51A8006A04F4 /* ProductListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D67B266B51A8006A04F4 /* ProductListService.swift */; };
 		FCA0D67F266B5213006A04F4 /* CategoryRepsotory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D67E266B5213006A04F4 /* CategoryRepsotory.swift */; };
 		FCA0D683266B5296006A04F4 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D682266B5296006A04F4 /* ProductRepository.swift */; };
+		FCA0D685266B59A8006A04F4 /* RegisterProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D684266B59A8006A04F4 /* RegisterProductService.swift */; };
+		FCA0D689266B5A2D006A04F4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D688266B5A2D006A04F4 /* Account.swift */; };
+		FCA0D68D266B5A57006A04F4 /* StoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D68C266B5A57006A04F4 /* StoreRepository.swift */; };
+		FCA0D68F266B5DDF006A04F4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D68E266B5DDF006A04F4 /* Store.swift */; };
 		FCA4DF9A26515A0300E82E47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DF9926515A0300E82E47 /* main.swift */; };
 		FCA4DFCD26522D8A00E82E47 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA4DFCB26522D8A00E82E47 /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCA4DFDA26522D9000E82E47 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA4DFD826522D9000E82E47 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,6 +74,10 @@
 		FCA0D67B266B51A8006A04F4 /* ProductListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListService.swift; sourceTree = "<group>"; };
 		FCA0D67E266B5213006A04F4 /* CategoryRepsotory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepsotory.swift; sourceTree = "<group>"; };
 		FCA0D682266B5296006A04F4 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		FCA0D684266B59A8006A04F4 /* RegisterProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductService.swift; sourceTree = "<group>"; };
+		FCA0D688266B5A2D006A04F4 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		FCA0D68C266B5A57006A04F4 /* StoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRepository.swift; sourceTree = "<group>"; };
+		FCA0D68E266B5DDF006A04F4 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		FCA4DF9626515A0300E82E47 /* DDD_Start */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DDD_Start; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4DF9926515A0300E82E47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FCA4DFA026515A6300E82E47 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -169,6 +177,32 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		FCA0D686266B5A23006A04F4 /* Aggregate_Store */ = {
+			isa = PBXGroup;
+			children = (
+				FCA0D687266B5A28006A04F4 /* Root */,
+				FCA0D68A266B5A46006A04F4 /* Repository */,
+			);
+			path = Aggregate_Store;
+			sourceTree = "<group>";
+		};
+		FCA0D687266B5A28006A04F4 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FCA0D68E266B5DDF006A04F4 /* Store.swift */,
+				FCA0D688266B5A2D006A04F4 /* Account.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FCA0D68A266B5A46006A04F4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FCA0D68C266B5A57006A04F4 /* StoreRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		FCA4DF8D26515A0300E82E47 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +242,7 @@
 				FCA4DFC226522CF500E82E47 /* CancelOrderService.swift */,
 				FCA4DFB62651FFA000E82E47 /* CalculateDiscountService.swift */,
 				FCA0D67B266B51A8006A04F4 /* ProductListService.swift */,
+				FCA0D684266B59A8006A04F4 /* RegisterProductService.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -219,6 +254,7 @@
 				FCA4DFD926522D9000E82E47 /* Info.plist */,
 				FCA4DFB82651FFB600E82E47 /* RuleDiscounter.swift */,
 				FCA4DFBC2652039C00E82E47 /* CustomerRepository.swift */,
+				FCA0D686266B5A23006A04F4 /* Aggregate_Store */,
 				FCA4DFFA26522DC700E82E47 /* Aggregate_Order */,
 				FCA4E008265238BE00E82E47 /* Aggregate_Member */,
 				FCA4E006265238B100E82E47 /* Aggregate_Payment */,
@@ -503,6 +539,7 @@
 			files = (
 				FCA0D67C266B51A8006A04F4 /* ProductListService.swift in Sources */,
 				FCA4DFEB26522DA800E82E47 /* CancelOrderService.swift in Sources */,
+				FCA0D685266B59A8006A04F4 /* RegisterProductService.swift in Sources */,
 				FCA4E00A26527F3700E82E47 /* CalculateDiscountService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,9 +557,12 @@
 				FCA4DFEC26522DAD00E82E47 /* Order.swift in Sources */,
 				FCA4DFED26522DAD00E82E47 /* RuleDiscounter.swift in Sources */,
 				FCA0D67F266B5213006A04F4 /* CategoryRepsotory.swift in Sources */,
+				FCA0D68D266B5A57006A04F4 /* StoreRepository.swift in Sources */,
 				FCA4DFF426522DAD00E82E47 /* OrderRepository.swift in Sources */,
 				FCA4DFF626522DAD00E82E47 /* Orderer.swift in Sources */,
+				FCA0D689266B5A2D006A04F4 /* Account.swift in Sources */,
 				FCA0D67926647029006A04F4 /* Category.swift in Sources */,
+				FCA0D68F266B5DDF006A04F4 /* Store.swift in Sources */,
 				FCA0D67726628901006A04F4 /* Member.swift in Sources */,
 				FCA4DFF126522DAD00E82E47 /* Product.swift in Sources */,
 				FCA4DFF726522DAD00E82E47 /* DeliveryStatus.swift in Sources */,

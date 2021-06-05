@@ -14,6 +14,9 @@ public protocol ProductRepository {
         page: Int,
         size: Int
     ) -> [Product]
+    func save(product: Product)
+    
     func totalNumberOfProducts(byCateogryID categoryID: Category.ID) -> Int
+    func nextID() -> Product.ID
     
 }
