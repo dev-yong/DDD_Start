@@ -25,16 +25,12 @@ public class RegisterProductService<AccountRepository: StoreRepository> {
         productRequest: ProductRequest
     ) -> Product.ID {
         let account = self.accountRepository.store(id: productRequest.accountID)
-        guard !account.isBlocked else {
-            fatalError()
-        }
         let productID = self.productRepository.nextID()
-        let product = Product(
-            id: productID,
+        let product = account.createProduct(
+            productID: productID,
             name: productRequest.name,
             price: productRequest.price,
             detail: productRequest.detail,
-            accountID: productRequest.accountID,
             categoryIDs: productRequest.categoryIDs
         )
         self.productRepository.save(product: product)

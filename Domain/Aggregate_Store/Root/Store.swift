@@ -13,3 +13,27 @@ public protocol Store: Identifiable where ID == String {
     var isBlocked: Bool { get }
     
 }
+
+extension Store {
+    
+    public func createProduct(
+        productID: Product.ID,
+        name: String,
+        price: Money,
+        detail: String,
+        categoryIDs: Set<Category.ID>
+    ) -> Product {
+        guard !self.isBlocked else {
+            fatalError()
+        }
+        return Product(
+            id: productID,
+            name: name,
+            price: price,
+            detail: detail,
+            accountID: self.id,
+            categoryIDs: categoryIDs
+        )
+    }
+    
+}
